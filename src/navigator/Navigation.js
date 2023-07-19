@@ -43,7 +43,33 @@ const Navigation = () => {
                     tabBarIcon: ({focused}) => (
                     <FontAwesomeIcon icon={faList} 
                     size={30} 
-                    color={focused ? '#91FF85' : '#FFFFFF'}
+                    color={focused ? '#588c7e' : '#ffe7cb'}
+                    />
+                    ),
+                }}
+                />
+
+            <Tab.Screen 
+                name="Calendar" 
+                component={CalendarScreen}
+                options={{
+                    tabBarIcon: ({focused}) => (
+                    <FontAwesomeIcon icon={faCalendar} 
+                    size={30} 
+                    color={focused ? '#588c7e' : '#ffe7cb'}
+                    />
+                    ),
+                }}
+                />
+                
+                <Tab.Screen 
+                name="Main" 
+                component={MainScreen}
+                options={{
+                    tabBarIcon: ({focused}) => (
+                    <FontAwesomeIcon icon={faHeartCircleBolt}
+                    size={30} 
+                    color={focused ? '#588c7e' : '#ffe7cb'}
                     />
                     ),
                 }}
@@ -56,33 +82,7 @@ const Navigation = () => {
                     tabBarIcon: ({focused}) => (
                     <FontAwesomeIcon icon={faBookBookmark} 
                     size={30} 
-                    color={focused ? '#91FF85' : '#FFFFFF'}
-                    />
-                    ),
-                }}
-                />
-
-                <Tab.Screen 
-                name="Main" 
-                component={MainScreen}
-                options={{
-                    tabBarIcon: ({focused}) => (
-                    <FontAwesomeIcon icon={faHeartCircleBolt}
-                    size={30} 
-                    color={focused ? '#91FF85' : '#FFFFFF'}
-                    />
-                    ),
-                }}
-                />
-
-                <Tab.Screen 
-                name="Calendar" 
-                component={CalendarScreen}
-                options={{
-                    tabBarIcon: ({focused}) => (
-                    <FontAwesomeIcon icon={faCalendar} 
-                    size={30} 
-                    color={focused ? '#91FF85' : '#FFFFFF'}
+                    color={focused ? '#588c7e' : '#ffe7cb'}
                     />
                     ),
                 }}
@@ -95,7 +95,7 @@ const Navigation = () => {
                     tabBarIcon: ({focused}) => (
                     <FontAwesomeIcon icon={faUser} 
                     size={30} 
-                    color={focused ? '#91FF85' : '#FFFFFF'}
+                    color={focused ? '#588c7e' : '#ffe7cb'}
                     />
                     ),
                 }}
